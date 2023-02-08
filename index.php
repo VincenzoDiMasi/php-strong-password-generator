@@ -23,6 +23,13 @@ function random_password($length, $characters)
 
 };
 
+if ($pw_length) {
+    session_start();
+
+    $_SESSION['generated_password'] = random_password($pw_length, $characters);
+
+    header('Location: ./password_generated.php');
+}
 
 ?>
 
