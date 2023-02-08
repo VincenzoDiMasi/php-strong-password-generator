@@ -4,13 +4,13 @@ include 'function.php';
 $numbers = range('0', '9');
 $capital_letters = range('A', 'Z');
 $min_letters = range('a', 'z');
+$symbols = array_merge(range(chr(33), chr(47)), range(chr(58), chr(64)));
 
-$characters = [$numbers, $capital_letters, $min_letters]; 
+
+$characters = [$numbers, $capital_letters, $min_letters, $symbols]; 
 
 
 $pw_length = $_GET['pw-length'] ?? null;
-
-
 
 if ($pw_length) {
     session_start();
