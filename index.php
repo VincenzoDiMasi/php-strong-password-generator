@@ -1,3 +1,12 @@
+<?php 
+$numbers = range('0', '9');
+$capital_letters = range('A', 'Z');
+$min_letters = range('a', 'z');
+
+$characters = [$numbers, $capital_letters, $letters]; 
+
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
